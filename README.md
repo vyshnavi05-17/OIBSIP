@@ -446,3 +446,202 @@ Random Forest achieved approximately **46% Precision, 73% Recall, and 56% F1-Sco
 Therefore, **Random Forest was selected as the preferred model among the tested approaches**.
 
 The project demonstrates how machine learning can be applied to fraud detection while highlighting the importance of class imbalance handling, appropriate evaluation metrics, feature analysis, and scalable deployment architecture.
+
+
+
+# Retail Sales Exploratory Data Analysis (EDA)
+
+## 📌 Project Overview
+
+This project performs **Exploratory Data Analysis (EDA)** on a retail sales dataset using Python. The analysis focuses on understanding sales trends, customer demographics, product performance, transaction behaviour, and relationships between numerical variables.
+
+The objective is to transform raw retail sales data into meaningful business insights that can support better decision-making in areas such as inventory planning, marketing, customer segmentation, and revenue optimization.
+
+---
+
+## 🎯 Objectives
+
+The main objectives of this project are:
+
+* Inspect and understand the retail sales dataset.
+* Perform data cleaning and quality checks.
+* Analyze descriptive statistics.
+* Identify monthly and quarterly sales trends.
+* Understand customer demographics.
+* Analyze product-category performance.
+* Study relationships between numerical variables using correlation analysis.
+* Analyze transaction-value distribution.
+* Generate actionable business recommendations.
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python**
+* **Pandas** – Data manipulation and analysis
+* **NumPy** – Numerical computations
+* **Matplotlib** – Data visualization
+* **Seaborn** – Statistical visualization
+* **JupyterLab** – Development environment
+
+---
+
+## 📊 Analysis Performed
+
+### 1. Data Inspection & Cleaning
+
+The dataset was inspected to understand its structure, columns, data types, missing values, and duplicate records.
+
+The analysis confirmed that **no duplicate records were found**, so duplicate-row removal was not required.
+
+---
+
+### 2. Descriptive Statistics
+
+Descriptive statistics were used to understand the central tendency and variability of numerical variables such as:
+
+* Age
+* Quantity
+* Price per Unit
+* Total Amount
+
+Mean, median, and summary statistics were calculated to understand the characteristics of the dataset.
+
+---
+
+### 3. Time Series Analysis
+
+Monthly and quarterly sales trends were analyzed to understand how sales changed over time.
+
+**Key findings:**
+
+* May 2023 recorded the highest monthly sales of **53,150**.
+* January 2024 recorded the lowest sales of **1,530**.
+* Among the complete quarters, **Q4 2023** recorded the highest sales of **126,190**.
+* Q1 2024 contains only January data, so it should not be directly compared with complete quarters.
+
+These trends can help businesses improve inventory planning, sales targets, and promotional campaigns.
+
+---
+
+### 4. Customer Demographic Analysis
+
+Customer demographics were analyzed using age groups and gender.
+
+#### Age Group
+
+The **46–55 age group** was the largest customer segment, representing **229 customers (22.9%)**.
+
+Customers between **26 and 65 years** make up the majority of the customer base.
+
+#### Gender
+
+The gender distribution was relatively balanced:
+
+* Female: **510 customers (51%)**
+* Male: **490 customers (49%)**
+
+This indicates that there is no strong gender imbalance in the dataset.
+
+---
+
+### 5. Product Category Analysis
+
+Product performance was analyzed using sales quantity and revenue.
+
+The analysis revealed an important difference between sales volume and revenue:
+
+* **Clothing** had the highest quantity sold, with approximately **895 units**.
+* **Electronics** generated the highest revenue despite having a lower sales quantity.
+* **Beauty** had the lowest quantity sold and lowest total revenue among the three categories.
+
+This demonstrates that product performance should not be evaluated using sales volume alone.
+
+---
+
+### 6. Correlation Analysis
+
+A correlation heatmap was used to examine relationships between numerical variables.
+
+Key findings:
+
+* **Price per Unit and Total Amount:** strong positive correlation of **0.85**
+* **Quantity and Total Amount:** moderate positive correlation of **0.37**
+* **Age and Total Amount:** very weak correlation of **-0.06**
+
+The results indicate that product pricing has a stronger relationship with transaction value than customer age.
+
+---
+
+### 7. Transaction Value Analysis
+
+The distribution of transaction amounts was analyzed to understand customer spending behaviour.
+
+The transaction values are **strongly right-skewed**, meaning most transactions are concentrated in the lower-value range, while a smaller number of transactions have substantially higher values.
+
+This suggests opportunities to increase transaction value through:
+
+* Product bundles
+* Cross-selling
+* Complementary product recommendations
+* Minimum-purchase discounts
+* Premium product offers
+
+---
+
+## 💡 Key Business Insights
+
+1. **Electronics is an important revenue-generating category**, despite having fewer units sold than Clothing.
+2. **Customers aged 26–65 form the majority of the customer base**, with the 46–55 segment being the largest.
+3. **Sales fluctuate significantly over time**, with Q4 2023 showing the strongest complete-quarter performance.
+4. **Product price has a strong relationship with transaction value**, with a correlation of 0.85 between Price per Unit and Total Amount.
+5. **Most transactions are lower-value purchases**, creating an opportunity to increase average transaction value.
+6. **Gender distribution is relatively balanced**, so customer segmentation should not rely heavily on gender alone.
+
+---
+
+## 📈 Business Recommendations
+
+### 1. Focus on High-Value Electronics
+
+Maintain sufficient inventory of high-performing Electronics products and consider targeted promotions to maximize revenue.
+
+### 2. Target the 26–65 Customer Segment
+
+Develop targeted marketing campaigns, loyalty programs, and personalized recommendations for the major customer segments.
+
+### 3. Increase Low-Value Transaction Amounts
+
+Use bundles, cross-selling, minimum-purchase discounts, and complementary product recommendations to increase transaction value.
+
+### 4. Use Sales Trends for Planning
+
+Use strong sales periods such as Q4 2023 as a reference for inventory planning, marketing campaigns, and sales targets.
+
+### 5. Analyze Product Pricing
+
+Since Price per Unit has a strong relationship with Total Amount, pricing strategy and high-value products should be considered when developing revenue-growth strategies.
+
+---
+
+## 📁 Project Structure
+
+```text
+OIBSIP/
+│
+└── DataAnalyst-Level1-Task1-RetailSalesEDA/
+    │
+    ├── Retail_Sales_EDA.ipynb
+    └── README.md
+```
+
+---
+
+## 🔍 Conclusion
+
+The Retail Sales EDA project provides a detailed view of sales performance, customer demographics, product categories, and transaction behaviour.
+
+The analysis shows that **sales trends, product pricing, customer segments, and transaction values** can provide valuable insights for business decision-making. In particular, Electronics contributes strongly to revenue, customers aged 26–65 represent the majority of the dataset, and product price has a strong positive relationship with transaction value.
+
+Overall, the project demonstrates how **Python-based exploratory data analysis and visualization can be used to convert retail data into actionable business insights**.
+
