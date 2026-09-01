@@ -645,3 +645,388 @@ The analysis shows that **sales trends, product pricing, customer segments, and 
 
 Overall, the project demonstrates how **Python-based exploratory data analysis and visualization can be used to convert retail data into actionable business insights**.
 
+
+
+# Retail Sales Exploratory Data Analysis
+
+## 📌 Project Overview
+
+This project performs **Exploratory Data Analysis (EDA)** on a retail sales dataset using Python. The purpose of the analysis is to understand sales patterns, customer demographics, product-category performance, transaction behaviour, and relationships between numerical variables.
+
+The analysis converts raw retail transaction data into meaningful business insights that can support decision-making related to sales planning, inventory management, customer targeting, product strategy, and revenue growth.
+
+---
+
+## 🎯 Objectives
+
+The main objectives of this project are:
+
+* Inspect and understand the retail sales dataset.
+* Perform data cleaning and quality checks.
+* Calculate descriptive statistics for numerical variables.
+* Analyze monthly and quarterly sales trends.
+* Understand customer age-group and gender distributions.
+* Analyze product-category performance using quantity and revenue.
+* Identify high-value transactions.
+* Analyze correlations between numerical variables.
+* Study the distribution of transaction values.
+* Generate actionable business recommendations.
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python**
+* **Pandas** – Data manipulation and analysis
+* **NumPy** – Numerical computations
+* **Matplotlib** – Data visualization
+* **Seaborn** – Statistical visualization
+* **JupyterLab** – Development environment
+
+---
+
+## 📂 Dataset
+
+The project uses a **retail sales transaction dataset** containing information related to:
+
+* Transaction ID
+* Date
+* Customer ID
+* Gender
+* Age
+* Product Category
+* Quantity
+* Price per Unit
+* Total Amount
+
+The dataset is analyzed to identify sales patterns and customer behaviour.
+
+---
+
+## 🔍 Data Preparation
+
+The dataset was inspected before performing the analysis.
+
+The project includes:
+
+* Dataset inspection
+* Data type checking
+* Missing-value checking
+* Duplicate-record checking
+* Date conversion
+* Creation of Year, Month, Month Name, and Quarter columns
+* Creation of customer age groups
+
+### Duplicate Check
+
+No duplicate records were found in the dataset, so duplicate-row removal was not required.
+
+---
+
+# 📊 Analysis Performed
+
+## 1. Descriptive Statistics
+
+Descriptive statistics were calculated for the following numerical variables:
+
+* Age
+* Quantity
+* Price per Unit
+* Total Amount
+
+This helps understand the central tendency and variability of the retail sales data.
+
+---
+
+## 2. Time Series Analysis
+
+Monthly and quarterly sales trends were analyzed to understand changes in sales performance over time.
+
+### Monthly Sales
+
+The analysis showed that:
+
+* **May 2023** recorded the highest monthly sales of **53,150**.
+* **January 2024** recorded the lowest monthly sales of **1,530**.
+
+The fluctuations in monthly sales indicate changes in customer purchasing activity across the analyzed period.
+
+### Quarterly Sales
+
+The quarterly analysis showed:
+
+* **Q4 2023** recorded the highest sales among the complete quarters, with **126,190**.
+* **Q1 2024** recorded **1,530**, but this quarter contains only January data.
+
+Therefore, Q1 2024 should not be directly compared with the complete quarters of 2023.
+
+### Business Insight
+
+Sales trends can be used for:
+
+* Inventory planning
+* Sales target setting
+* Promotional campaign scheduling
+* Demand forecasting
+* Resource planning
+
+---
+
+## 3. Customer Demographic Analysis
+
+Customer demographics were analyzed using **age groups** and **gender distribution**.
+
+### Age Group Analysis
+
+The **46–55 age group** is the largest customer segment, with **229 customers (22.9%)**.
+
+The major customer groups are:
+
+| Age Group | Customers | Percentage |
+| --------- | --------: | ---------: |
+| 18–25     |       148 |      14.8% |
+| 26–35     |       205 |      20.5% |
+| 36–45     |       202 |      20.2% |
+| 46–55     |       229 |      22.9% |
+| 56–65     |       195 |      19.5% |
+
+Customers between **26 and 65 years** represent the majority of the customer base.
+
+There were **21 customers under 18 (2.1%)**, while no customers were recorded in the **65+** category.
+
+### Business Insight
+
+The business has a strong customer base among adults aged **26–65**, particularly the **46–55** segment.
+
+This information can be used for:
+
+* Targeted marketing campaigns
+* Loyalty programs
+* Personalized recommendations
+* Customer segmentation
+
+---
+
+## 4. Gender Distribution
+
+The gender distribution is relatively balanced.
+
+* **Female:** 510 customers (**51%**)
+* **Male:** 490 customers (**49%**)
+
+The difference between the two groups is only two percentage points, indicating that there is no strong gender imbalance in the dataset.
+
+### Business Insight
+
+Gender can be used as one factor for customer segmentation, but marketing decisions should not rely on gender alone. Purchasing behaviour and product preferences should also be considered.
+
+---
+
+## 5. Product Category Analysis
+
+Product performance was analyzed using both **quantity sold** and **revenue**.
+
+The dataset contains three main product categories:
+
+* Clothing
+* Electronics
+* Beauty
+
+### Key Findings
+
+* **Clothing** recorded the highest quantity sold, with approximately **895 units**.
+* **Electronics** generated the highest revenue despite having a lower sales quantity than Clothing.
+* **Beauty** recorded the lowest quantity sold and lowest total revenue among the three categories.
+
+### Business Insight
+
+Sales volume alone does not determine revenue performance.
+
+Electronics demonstrates that products with higher prices can generate greater revenue even when fewer units are sold.
+
+Therefore, businesses should evaluate both:
+
+* Sales quantity
+* Revenue contribution
+
+when measuring product performance.
+
+---
+
+## 6. High-Value Transaction Analysis
+
+The analysis identifies the **top 10 transactions based on Total Amount**.
+
+The transactions were examined using:
+
+* Transaction ID
+* Date
+* Customer ID
+* Product Category
+* Quantity
+* Price per Unit
+* Total Amount
+
+This helps identify unusually large purchases and understand the characteristics of high-value transactions.
+
+---
+
+## 7. Correlation Analysis
+
+A correlation matrix and heatmap were used to examine relationships between:
+
+* Age
+* Quantity
+* Price per Unit
+* Total Amount
+
+### Key Findings
+
+**Price per Unit and Total Amount**
+
+* Correlation: **0.85**
+* Indicates a strong positive relationship.
+
+Transactions involving higher-priced products generally have higher total transaction values.
+
+**Quantity and Total Amount**
+
+* Correlation: **0.37**
+* Indicates a moderate positive relationship.
+
+Purchasing more units generally increases transaction value, although the relationship is not extremely strong.
+
+**Age and Total Amount**
+
+* Correlation: **-0.06**
+* Indicates a very weak relationship.
+
+Customer age has little linear relationship with transaction value in this dataset.
+
+### Business Insight
+
+Product pricing appears to be a stronger driver of transaction value than customer age.
+
+Therefore, pricing strategy and product mix are important areas for revenue-growth opportunities.
+
+---
+
+## 8. Transaction Value Distribution
+
+The distribution of transaction amounts was analyzed to understand customer spending behaviour.
+
+The distribution is **strongly right-skewed**.
+
+This means:
+
+* Most transactions fall within the lower transaction-value range.
+* A smaller number of transactions have substantially higher values.
+* High-value transactions extend toward approximately **2,000**.
+
+### Business Insight
+
+High-value transactions occur less frequently but can make an important contribution to overall revenue.
+
+The business can increase transaction value through:
+
+* Product bundles
+* Cross-selling
+* Complementary product recommendations
+* Minimum-purchase discounts
+* Premium product offers
+
+---
+
+# 💡 Key Business Insights
+
+1. **Electronics generates the highest revenue**, despite having fewer units sold than Clothing.
+
+2. **Clothing has the highest sales quantity**, with approximately 895 units.
+
+3. **Customers aged 26–65 represent the majority of the customer base**, with the 46–55 segment being the largest.
+
+4. **Gender distribution is relatively balanced**, with females representing 51% and males 49%.
+
+5. **Q4 2023 recorded the highest sales among complete quarters**, reaching 126,190.
+
+6. **May 2023 recorded the highest monthly sales**, reaching 53,150.
+
+7. **Price per Unit has a strong positive correlation with Total Amount (0.85)**.
+
+8. **Quantity has a moderate positive correlation with Total Amount (0.37)**.
+
+9. **Customer age has very weak correlation with transaction value (-0.06)**.
+
+10. **Transaction values are strongly right-skewed**, indicating that most purchases are relatively low-value while a smaller number are high-value.
+
+---
+
+# 📈 Business Recommendations
+
+### 1. Focus on High-Value Electronics
+
+Electronics generates the highest revenue despite having a lower sales quantity than Clothing.
+
+The business should maintain sufficient inventory of high-performing Electronics products and use targeted promotions to maximize revenue.
+
+### 2. Target the 26–65 Customer Segment
+
+Customers aged 26–65 represent the majority of the customer base.
+
+Marketing campaigns, loyalty programs, and personalized recommendations can be designed around these customer segments.
+
+### 3. Increase Low-Value Transaction Amounts
+
+Since most transactions are concentrated in the lower-value range, the business can increase average transaction value through:
+
+* Product bundles
+* Cross-selling
+* Minimum-purchase offers
+* Complementary products
+* Personalized recommendations
+
+### 4. Use Sales Trends for Planning
+
+Strong sales periods such as Q4 2023 can be studied to understand successful sales patterns.
+
+The business can use these patterns for:
+
+* Inventory preparation
+* Promotional planning
+* Sales target setting
+* Demand planning
+
+### 5. Optimize Pricing and Product Mix
+
+The strong **0.85 correlation between Price per Unit and Total Amount** indicates that pricing is strongly associated with transaction value.
+
+The business should evaluate its product mix and balance high-value products with products that generate high sales volume.
+
+---
+
+# 📁 Project Structure
+
+```text
+OIBSIP/
+│
+└── DataAnalyst-Level2-Task2-RetailSalesEDA/
+    │
+    ├── Retail_Sales_EDA.ipynb
+    └── README.md
+```
+
+---
+
+# 📌 Conclusion
+
+The Retail Sales Exploratory Data Analysis project provides insights into sales performance, customer demographics, product categories, pricing, and transaction behaviour.
+
+The analysis shows that **Electronics contributes the highest revenue**, while **Clothing records the highest sales quantity**. Customers aged **26–65** form the majority of the customer base, and the gender distribution is relatively balanced.
+
+The time-series analysis highlights fluctuations in sales, with **May 2023** being the strongest month and **Q4 2023** being the strongest complete quarter.
+
+Correlation analysis shows a strong relationship between **Price per Unit and Total Amount**, while customer age has very little relationship with transaction value.
+
+Overall, the project demonstrates how **Python, Pandas, Matplotlib, and Seaborn can be used to analyze retail data and convert raw transaction data into actionable business insights**.
+
+
